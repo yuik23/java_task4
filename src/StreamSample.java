@@ -11,5 +11,9 @@ public class StreamSample {
     System.out.println(names.stream().filter(name -> name.startsWith("i")).count());
     System.out.println("3.suzukiさんはいるか");
     System.out.println(names.stream().anyMatch(name -> name.equals("suzuki")));
+    System.out.println("4.nakamuraさんはいるか");
+    if (names.contains("nakamura")) {
+      System.out.println("nakamuraさんはいます");
+    }
   }
 }
