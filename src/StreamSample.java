@@ -4,7 +4,7 @@ import java.util.List;
 public class StreamSample {
 
   public static void main(String[] args) {
-    List<String> names = List.of("yamada", "tanaka", "yasuda", "suzuki", "iida", "Satou", "nakamura");
+    List<String> names = List.of("yamada", "yasuda", "suzuki", "iida", "Satou", "nakamura");
     System.out.println("1.降順に並び替え");
     names.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
     System.out.println("2.iで始まる人数");
